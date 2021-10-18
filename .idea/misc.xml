@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Programming/IDNP/IDNP_Lab04/mvvm/app/src/main/res/drawable/ic_launcher_background.xml" value="0.378125" />
+        <entry key="..\:/Programming/IDNP/IDNP_Lab04/mvvm/app/src/main/res/layout/activity_view_model_main.xml" value="0.22296994167788245" />
+        <entry key="..\:/Programming/IDNP/IDNP_Lab04/mvvm/app/src/main/res/layout/activity_view_model_medical_visit.xml" value="0.33" />
+        <entry key="..\:/Programming/IDNP/IDNP_Lab04/mvvm/app/src/main/res/layout/activity_view_model_patient.xml" value="0.25" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/mvvm/app/src/main/res/layout/activity_main.xml" value="0.1" />
       </map>
     </option>
@@ -12,5 +16,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.19655797101449277" />
+      </ProjectState>
+    </option>
   </component>
 </project>

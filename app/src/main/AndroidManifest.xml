@@ -10,7 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mvvm">
         <activity
-            android:name=".MainActivity"
+            android:name=".View.ViewMedicalVisitActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".View.ViewPatientActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".View.ViewMainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
