@@ -4,9 +4,19 @@
     <string name="tittle_RegisterPac">REGISTRAR PACIENTE</string>
     <string name="names_pac">Nombres</string>
     <string name="lastname_pac">Apellidos</string>
-    <string name="txtbtn_registrar_paciente">Registrar Paciente</string>
-    <string name="txtbtn_registrar_visita">Registrar Visita</string>
+    <string name="dni_pac">DNI</string>
+    <string name="address_pac">Dirección</string>
+    <string name="email_pac">Correo electrónico</string>
+    <string name="txtbtn_register_patient">Registrar Paciente</string>
+    <string name="txtbtn_register_medicalVisit">Registrar Visita</string>
+    <string name="txtbtn_register">REGISTRAR</string>
+    <string name="txtbtn_cancel">CANCEL</string>
     <string name="txtView_datos_pac">Detalles</string>
-    <string name="txtbtn_enviar_correo">Enviar Correo</string>
+    <string name="txtbtn_send_email">Enviar Correo</string>
     <string name="txtTittle_registerVisit">REGISTRAR VISITA</string>
+    <string name="txtFormMedicalVisitWeight">Peso</string>
+    <string name="txtFormMedicalVisitTemperature">Temperatura</string>
+    <string name="txtFormMedicalVisitHeartPressure">Presión</string>
+    <string name="txtFormMedicalVisitSaturation">Saturación</string>
+
 </resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundLayourColor"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    tools:context=".View.ViewMedicalVisitActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewTittle"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:text="@string/txtTittle_registerVisit"
+        android:textAlignment="center"
+        android:textColor="#11504A"
+        android:textColorHighlight="#009688"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextWeight"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="@string/txtFormMedicalVisitWeight"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextTemperature"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="@string/txtFormMedicalVisitTemperature"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextPressure"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:ems="10"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:maxLength="3"
+        android:hint="@string/txtFormMedicalVisitHeartPressure" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextSaturation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:ems="10"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:maxLength="3"
+        android:hint="@string/txtFormMedicalVisitSaturation" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="7dp"
+        android:background="@color/mainTheme_btn"
+        android:text="@string/txtbtn_register"
+        android:textColor="#FFFFFF"
+        app:strokeColor="#000000"
+        app:strokeWidth="2dp" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="7dp"
+        android:background="@color/secondTheme_btn"
+        android:text="@string/txtbtn_cancel"
+        android:textColor="#000000
+" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
