@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.lab02.analucia.mvvm.ModelView.ViewModelMain;
+import com.lab02.analucia.mvvm.ModelView.ViewModelPatient;
 import com.lab02.analucia.mvvm.R;
 
 public class ViewMainActivity extends AppCompatActivity {
