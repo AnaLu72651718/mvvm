@@ -42,7 +42,8 @@ public class ViewPatientActivity extends AppCompatActivity {
         editTextName = findViewById(R.id.editTextNames);
         editTextLastName = findViewById(R.id.editTextLastNames);
         editTextDni = findViewById(R.id.editTextDni);
-        editTextAddress = findViewById(R.id.editTextAddress);
+        editTextAddress 
+                = findViewById(R.id.editTextAddress);
         editTextEmail = findViewById(R.id.editTextEmail);
 
 
@@ -50,6 +51,7 @@ public class ViewPatientActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 viewModel.registerPatient(editTextName.toString(),editTextLastName.toString(),editTextDni.toString(),editTextAddress.toString(),editTextEmail.toString());
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView, new PacienteView()).commit();
             }
         });
 

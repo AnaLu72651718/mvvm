@@ -1,15 +1,16 @@
 package com.lab02.analucia.mvvm.View;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatButton;
-import androidx.appcompat.widget.AppCompatTextView;
-import androidx.lifecycle.ViewModelProviders;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
+import androidx.appcompat.widget.AppCompatTextView;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProviders;
+
+import com.lab02.analucia.mvvm.Model.Patient;
 import com.lab02.analucia.mvvm.ModelView.ViewModelMain;
 import com.lab02.analucia.mvvm.ModelView.ViewModelPatient;
 import com.lab02.analucia.mvvm.R;
@@ -18,7 +19,8 @@ public class ViewMainActivity extends AppCompatActivity {
 
     private AppCompatButton buttonRegisterPatient, buttonRegisterMedicalVisit, buttonSendEmail;
     private AppCompatTextView textViewDataPatient;
-    private ViewModelMain viewModel;
+    private ViewModelMain viewModelMain;
+    private ViewModelPatient viewModelPatiente;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,28 +30,26 @@ public class ViewMainActivity extends AppCompatActivity {
     }
 
     private void configView(){
-        viewModel = ViewModelProviders.of(this).get(ViewModelMain.class);
+        viewModelMain = ViewModelProviders.of(this).get(ViewModelMain.class);
+        viewModelPatiente = ViewModelProviders.of(this).get(ViewModelPatient.class);
         buttonRegisterPatient = findViewById(R.id.buttonRegisterPatient);
         buttonRegisterMedicalVisit = findViewById(R.id.buttonRegisterMedicalVisit);
         buttonSendEmail = findViewById(R.id.buttonSendEmail);
         textViewDataPatient = findViewById(R.id.textViewDataPatient);
 
-        viewModel.setContext(this);
-
+        viewModelMain.setContext(this);
+/*
         buttonRegisterPatient.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                viewModel.onActivityPatient();
+              //  replaceFragment(new fracment)
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView, new PacienteView()).commit();
             }
-        });
+        });*/
+        buttonRegisterPatient.setOnClickListener(view -> viewModelMain.onActivityPatient());
+        buttonRegisterMedicalVisit.setOnClickListener(view -> viewModelMain.onActivityMedicalVisit());
 
-        buttonRegisterMedicalVisit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                viewModel.onActivityMedicalVisit();
-            }
-        });
-
-
+//        final Observer<Patient> observer= s -> textViewDataPatient.setText((CharSequence) s);
+  //      viewModelPatiente.getPatient().observe(this,observer);
     }
 }

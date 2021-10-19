@@ -28,6 +28,7 @@ public class ViewModelPatient extends ViewModel {
         newPatient.setName(name);
         newPatient.setLastName(lastname);
         newPatient.setAddress(address);
+        newPatient.setEmail(email);
         newPatient.setDni(dni);
         newPatient.setAddress(address);
         patient.setValue(RegisterPatientUseCase.register(newPatient));
