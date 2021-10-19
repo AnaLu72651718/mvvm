@@ -30,8 +30,7 @@ public class ViewModelPatient extends ViewModel {
         newPatient.setAddress(address);
         newPatient.setDni(dni);
         newPatient.setEmail(email);
-        //patient.setValue(RegisterPatientUseCase.register(newPatient));
-        patient.setValue(newPatient);//prueba sin Use cae
+        patient.setValue(newPatient);
     }
 
     public void onActivityMain() {
