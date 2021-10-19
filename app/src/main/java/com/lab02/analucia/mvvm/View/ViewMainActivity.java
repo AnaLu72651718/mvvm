@@ -28,7 +28,6 @@ public class ViewMainActivity extends AppCompatActivity {
     }
 
     private void configView(){
-        viewModel = ViewModelProviders.of(this).get(ViewModelMain.class);
         buttonRegisterPatient = findViewById(R.id.buttonRegisterPatient);
         buttonRegisterMedicalVisit = findViewById(R.id.buttonRegisterMedicalVisit);
         buttonSendEmail = findViewById(R.id.buttonSendEmail);
@@ -40,6 +39,7 @@ public class ViewMainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 viewModel.onActivityPatient();
+
             }
         });
 

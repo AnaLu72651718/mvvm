@@ -7,6 +7,7 @@ import androidx.appcompat.widget.AppCompatEditText;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -35,7 +36,7 @@ public class ViewPatientActivity extends AppCompatActivity {
     }
 
     private void configView(){
-        viewModel = ViewModelProviders.of(this).get(ViewModelPatient.class);
+        viewModel = ViewModelProviders.of(this).get(ViewModelPatient.class); //?
         buttonRegister = findViewById(R.id.buttonRegister);
         buttonCancel = findViewById(R.id.buttonCancel);
 
@@ -59,6 +60,7 @@ public class ViewPatientActivity extends AppCompatActivity {
                 viewModel.onActivityMain();
             }
         });
+
 
         final Observer <Patient> observer = new Observer<Patient>() {
             @Override

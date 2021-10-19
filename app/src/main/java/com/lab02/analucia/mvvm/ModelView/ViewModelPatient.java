@@ -29,8 +29,9 @@ public class ViewModelPatient extends ViewModel {
         newPatient.setLastName(lastname);
         newPatient.setAddress(address);
         newPatient.setDni(dni);
-        newPatient.setAddress(address);
-        patient.setValue(RegisterPatientUseCase.register(newPatient));
+        newPatient.setEmail(email);
+        //patient.setValue(RegisterPatientUseCase.register(newPatient));
+        patient.setValue(newPatient);//prueba sin Use cae
     }
 
     public void onActivityMain() {
