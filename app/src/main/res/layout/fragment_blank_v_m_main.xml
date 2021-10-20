@@ -7,7 +7,7 @@
     android:background="@color/backgroundLayourColor"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".View.ViewMainActivity">
+    tools:context=".View.BlankFragmentVMMain">
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/textViewTittle"

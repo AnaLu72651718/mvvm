@@ -3,8 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Programming/IDNP/IDNP_Lab04/cambios 16.26/mvvm/app/src/main/res/layout/activity_main.xml" value="0.2546875" />
         <entry key="..\:/Programming/IDNP/IDNP_Lab04/cambios 16.26/mvvm/app/src/main/res/layout/activity_view_model_main.xml" value="0.20260416666666667" />
+        <entry key="..\:/Programming/IDNP/IDNP_Lab04/cambios 16.26/mvvm/app/src/main/res/layout/activity_view_model_medical_visit.xml" value="0.303125" />
         <entry key="..\:/Programming/IDNP/IDNP_Lab04/cambios 16.26/mvvm/app/src/main/res/layout/activity_view_model_patient.xml" value="0.20260416666666667" />
+        <entry key="..\:/Programming/IDNP/IDNP_Lab04/cambios 16.26/mvvm/app/src/main/res/layout/fragment_blank_v_m_main.xml" value="0.34646739130434784" />
+        <entry key="..\:/Programming/IDNP/IDNP_Lab04/cambios 16.26/mvvm/app/src/main/res/layout/fragment_blank_v_m_medical_visit.xml" value="0.26875" />
+        <entry key="..\:/Programming/IDNP/IDNP_Lab04/cambios 16.26/mvvm/app/src/main/res/layout/fragment_blank_v_m_patient.xml" value="0.26875" />
         <entry key="..\:/Programming/IDNP/IDNP_Lab04/cambios 16.26/mvvm/app/src/main/res/layout/fragment_paciente_view.xml" value="0.20260416666666667" />
         <entry key="..\:/Programming/IDNP/IDNP_Lab04/mvvm/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.21510416666666668" />
         <entry key="..\:/Programming/IDNP/IDNP_Lab04/mvvm/app/src/main/res/drawable/ic_launcher_background.xml" value="0.378125" />
